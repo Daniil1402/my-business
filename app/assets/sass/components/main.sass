@@ -1,0 +1,66 @@
+.main
+  background: #ffffff
+  height: 100vh
+  border-radius: 15px
+  overflow: hidden
+  padding:
+    left: 30px
+    top: 40px
+  .mainLeft
+    .mainInfo
+      .mainInfo__top
+        display: flex
+        margin-bottom: 30px
+        .avatar__photo
+          max-width: 180px
+          width: 100%
+          margin-right: 30px
+        .personalData
+          .personalData__name
+            font-family: ProximaNova-Regular, sans-serif
+            font-weight: 600
+            font-size: 25px
+            margin-bottom: 10px
+          .personalData__icon
+            margin-bottom: 10px
+            padding-left: 10px
+            display: flex
+            align-items: center
+            img
+              margin-right: 10px
+          .personalData__role
+            display: flex
+            flex-direction: column
+            padding-left: 10px
+            span
+              display: block
+            .roleTittle
+              font-family: ProximaNova-Regular, sans-serif
+              font-size: 16px
+              font-weight: 600
+              margin-bottom: 10px
+            .role
+              font-family: ProximaNova-Regular, sans-serif
+              font-size: 14px
+              font-weight: normal
+              margin-bottom: 10px
+              color: #777F90
+            .roleText
+              font-family: ProximaNova-Regular, sans-serif
+              font-size: 14px
+              font-weight: normal
+              margin-bottom: 10px
+              color: #777F90
+              max-width: 440px
+              width: 100%
+      .mainInfo__buttons
+        max-width: 170px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        //align-items: center
+        a
+          transition: .3s
+          &:hover
+            filter: invert(70%)
+            transition: .3s
