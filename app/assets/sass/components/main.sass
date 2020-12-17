@@ -7,7 +7,9 @@
     left: 30px
     top: 40px
   .mainLeft
+    display: flex
     .mainInfo
+      margin-right: 30px
       .mainInfo__top
         display: flex
         margin-bottom: 30px
@@ -34,11 +36,6 @@
             padding-left: 10px
             span
               display: block
-            .roleTittle
-              font-family: ProximaNova-Regular, sans-serif
-              font-size: 16px
-              font-weight: 600
-              margin-bottom: 10px
             .role
               font-family: ProximaNova-Regular, sans-serif
               font-size: 14px
@@ -59,8 +56,126 @@
         display: flex
         justify-content: space-between
         //align-items: center
+        margin-bottom: 35px
         a
           transition: .3s
           &:hover
             filter: invert(70%)
             transition: .3s
+      .mainInfo__needs
+        margin-bottom: 20px
+        ul
+          display: flex
+          list-style-position: inside
+          li
+            border: 1px solid #BDBDC7
+            border-radius: 34px
+            overflow: hidden
+            padding: 7px 15px 7px 15px
+            list-style-type: none
+            font-family: ProximaNova-Regular, sans-serif
+            font-size: 14px
+            font-weight: normal
+            color: #777F90
+            margin-right: 10px
+            &::before
+              font-family: 'Montserrat', sans-serif
+              content: "●"
+              color: #F6D616
+              font-weight: 400
+              padding-right: 7px
+      .mainInfo__industry
+        margin-bottom: 30px
+        ul
+          display: flex
+          list-style-position: inside
+          li
+            border: 1px solid #BDBDC7
+            border-radius: 34px
+            overflow: hidden
+            padding: 7px 15px 7px 15px
+            list-style-type: none
+            font-family: ProximaNova-Regular, sans-serif
+            font-size: 14px
+            font-weight: normal
+            color: #777F90
+            margin-right: 10px
+            &::before
+              font-family: 'Montserrat', sans-serif
+              content: "●"
+              color: #ED5338
+              font-weight: 400
+              padding-right: 7px
+      .mainInfo__results
+        button
+          display: flex
+          max-width: 185px
+          width: 100%
+          padding: 10px 15px
+          background: #4E8EF8
+          cursor: pointer
+          border-radius: 7px
+          max-width: 225px
+          width: 100%
+          border: none
+          transition: .3s
+          &:hover
+            background: #406fb9
+            transition: .3s
+          span
+            color: #FFFFFF
+            font-family: ProximaNova-Regular, sans-serif
+            font-size: 14px
+            font-weight: 600
+            margin-right: 15px
+    .mainProfiles
+      max-width: 375px
+      width: 100%
+      // background: #FFFFFF
+      // box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1)
+      // border-radius: 7px
+      .mainProfiles__top
+        display: flex
+        justify-content: space-between
+        .mainProfiles__references, .mainProfiles__answers
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1)
+          border-radius: 7px
+          max-width: 180px
+          width: 100%
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding: 15px 0
+        .mainProfiles__title
+          font-family: ProximaNova-Regular, sans-serif
+          font-size: 14px
+          font-weight: 600
+          margin-bottom: 15px
+        .mainProfiles__main
+          font-family: ProximaNova-Regular, sans-serif
+          font-size: 72px
+          font-weight: normal
+          margin-bottom: 5px
+        .mainProfiles__info
+          font-family: ProximaNova-Regular, sans-serif
+          font-size: 14px
+          font-weight: normal
+          color: #777F90
+          float: left
+          max-width: 120px
+          width: 100%
+          
+
+
+
+
+
+
+
+.Tittle
+  font-family: ProximaNova-Regular, sans-serif
+  font-size: 16px
+  font-weight: 600
+  margin-bottom: 10px
+            
+        

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "ProximaNova-Bold";
   font-weight: bold;
@@ -243,6 +244,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+a:active, a:focus, button:active, button:focus, form:active, form:focus, textarea:active, textarea:focus {
+  box-shadow: none;
+  outline: none; }
+
 body {
   font-family: Montserrat-Regular, sans-serif;
   background: #f7f1f1; }
@@ -250,7 +255,7 @@ body {
 .container {
   max-width: 1600px;
   width: 100%;
-  margin: 0 auto; }
+  margin-left: 280px; }
 
 .header {
   display: flex;
@@ -300,67 +305,266 @@ body {
   overflow: hidden;
   padding-left: 30px;
   padding-top: 40px; }
-  .main .mainLeft .mainInfo .mainInfo__top {
-    display: flex;
-    margin-bottom: 30px; }
-    .main .mainLeft .mainInfo .mainInfo__top .avatar__photo {
-      max-width: 180px;
-      width: 100%;
+  .main .mainLeft {
+    display: flex; }
+    .main .mainLeft .mainInfo {
       margin-right: 30px; }
-    .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__name {
-      font-family: ProximaNova-Regular, sans-serif;
-      font-weight: 600;
-      font-size: 25px;
-      margin-bottom: 10px; }
-    .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__icon {
-      margin-bottom: 10px;
-      padding-left: 10px;
-      display: flex;
-      align-items: center; }
-      .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__icon img {
-        margin-right: 10px; }
-    .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role {
-      display: flex;
-      flex-direction: column;
-      padding-left: 10px; }
-      .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role span {
-        display: block; }
-      .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role .roleTittle {
-        font-family: ProximaNova-Regular, sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 10px; }
-      .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role .role {
-        font-family: ProximaNova-Regular, sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        margin-bottom: 10px;
-        color: #777F90; }
-      .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role .roleText {
-        font-family: ProximaNova-Regular, sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        margin-bottom: 10px;
-        color: #777F90;
-        max-width: 440px;
-        width: 100%; }
-  .main .mainLeft .mainInfo .mainInfo__buttons {
-    max-width: 170px;
+      .main .mainLeft .mainInfo .mainInfo__top {
+        display: flex;
+        margin-bottom: 30px; }
+        .main .mainLeft .mainInfo .mainInfo__top .avatar__photo {
+          max-width: 180px;
+          width: 100%;
+          margin-right: 30px; }
+        .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__name {
+          font-family: ProximaNova-Regular, sans-serif;
+          font-weight: 600;
+          font-size: 25px;
+          margin-bottom: 10px; }
+        .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__icon {
+          margin-bottom: 10px;
+          padding-left: 10px;
+          display: flex;
+          align-items: center; }
+          .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__icon img {
+            margin-right: 10px; }
+        .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role {
+          display: flex;
+          flex-direction: column;
+          padding-left: 10px; }
+          .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role span {
+            display: block; }
+          .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role .role {
+            font-family: ProximaNova-Regular, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            color: #777F90; }
+          .main .mainLeft .mainInfo .mainInfo__top .personalData .personalData__role .roleText {
+            font-family: ProximaNova-Regular, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            color: #777F90;
+            max-width: 440px;
+            width: 100%; }
+      .main .mainLeft .mainInfo .mainInfo__buttons {
+        max-width: 170px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px; }
+        .main .mainLeft .mainInfo .mainInfo__buttons a {
+          transition: .3s; }
+          .main .mainLeft .mainInfo .mainInfo__buttons a:hover {
+            filter: invert(70%);
+            transition: .3s; }
+      .main .mainLeft .mainInfo .mainInfo__needs {
+        margin-bottom: 20px; }
+        .main .mainLeft .mainInfo .mainInfo__needs ul {
+          display: flex;
+          list-style-position: inside; }
+          .main .mainLeft .mainInfo .mainInfo__needs ul li {
+            border: 1px solid #BDBDC7;
+            border-radius: 34px;
+            overflow: hidden;
+            padding: 7px 15px 7px 15px;
+            list-style-type: none;
+            font-family: ProximaNova-Regular, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            color: #777F90;
+            margin-right: 10px; }
+            .main .mainLeft .mainInfo .mainInfo__needs ul li::before {
+              font-family: 'Montserrat', sans-serif;
+              content: "●";
+              color: #F6D616;
+              font-weight: 400;
+              padding-right: 7px; }
+      .main .mainLeft .mainInfo .mainInfo__industry {
+        margin-bottom: 30px; }
+        .main .mainLeft .mainInfo .mainInfo__industry ul {
+          display: flex;
+          list-style-position: inside; }
+          .main .mainLeft .mainInfo .mainInfo__industry ul li {
+            border: 1px solid #BDBDC7;
+            border-radius: 34px;
+            overflow: hidden;
+            padding: 7px 15px 7px 15px;
+            list-style-type: none;
+            font-family: ProximaNova-Regular, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            color: #777F90;
+            margin-right: 10px; }
+            .main .mainLeft .mainInfo .mainInfo__industry ul li::before {
+              font-family: 'Montserrat', sans-serif;
+              content: "●";
+              color: #ED5338;
+              font-weight: 400;
+              padding-right: 7px; }
+      .main .mainLeft .mainInfo .mainInfo__results button {
+        display: flex;
+        max-width: 185px;
+        width: 100%;
+        padding: 10px 15px;
+        background: #4E8EF8;
+        cursor: pointer;
+        border-radius: 7px;
+        max-width: 225px;
+        width: 100%;
+        border: none;
+        transition: .3s; }
+        .main .mainLeft .mainInfo .mainInfo__results button:hover {
+          background: #406fb9;
+          transition: .3s; }
+        .main .mainLeft .mainInfo .mainInfo__results button span {
+          color: #FFFFFF;
+          font-family: ProximaNova-Regular, sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          margin-right: 15px; }
+    .main .mainLeft .mainProfiles {
+      max-width: 375px;
+      width: 100%; }
+      .main .mainLeft .mainProfiles .mainProfiles__top {
+        display: flex;
+        justify-content: space-between; }
+        .main .mainLeft .mainProfiles .mainProfiles__top .mainProfiles__references, .main .mainLeft .mainProfiles .mainProfiles__top .mainProfiles__answers {
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          border-radius: 7px;
+          max-width: 180px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 15px 0; }
+        .main .mainLeft .mainProfiles .mainProfiles__top .mainProfiles__title {
+          font-family: ProximaNova-Regular, sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 15px; }
+        .main .mainLeft .mainProfiles .mainProfiles__top .mainProfiles__main {
+          font-family: ProximaNova-Regular, sans-serif;
+          font-size: 72px;
+          font-weight: normal;
+          margin-bottom: 5px; }
+        .main .mainLeft .mainProfiles .mainProfiles__top .mainProfiles__info {
+          font-family: ProximaNova-Regular, sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          color: #777F90;
+          float: left;
+          max-width: 120px;
+          width: 100%; }
+
+.Tittle {
+  font-family: ProximaNova-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+#ProfilesSlider {
+  padding: 30px 20px 20px;
+  max-width: 375px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  position: relative; }
+  #ProfilesSlider .owl-dots {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 265%);
+    margin-top: 0; }
+    #ProfilesSlider .owl-dots .owl-dot span {
+      background: #BDBDC7; }
+    #ProfilesSlider .owl-dots .owl-dot.active {
+      border: none; }
+      #ProfilesSlider .owl-dots .owl-dot.active span {
+        background: #4E8EF8; }
+  #ProfilesSlider .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    margin-top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; }
-    .main .mainLeft .mainInfo .mainInfo__buttons a {
+    justify-content: center; }
+    #ProfilesSlider .owl-nav button.owl-next, #ProfilesSlider .owl-nav button.owl-prev {
+      margin: 0;
+      width: 25px;
+      height: 25px;
+      background: none;
+      position: relative;
+      display: flex;
       transition: .3s; }
-      .main .mainLeft .mainInfo .mainInfo__buttons a:hover {
-        filter: invert(70%);
+      #ProfilesSlider .owl-nav button.owl-next::after, #ProfilesSlider .owl-nav button.owl-prev::after {
+        position: absolute;
+        content: "";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%; }
+      #ProfilesSlider .owl-nav button.owl-next:hover, #ProfilesSlider .owl-nav button.owl-prev:hover {
+        filter: opacity(50%);
         transition: .3s; }
+      #ProfilesSlider .owl-nav button.owl-next span, #ProfilesSlider .owl-nav button.owl-prev span {
+        display: none; }
+    #ProfilesSlider .owl-nav button.owl-next {
+      margin-left: 30px; }
+      #ProfilesSlider .owl-nav button.owl-next::after {
+        background-image: url(../img/right.svg); }
+    #ProfilesSlider .owl-nav button.owl-prev {
+      margin-right: 30px; }
+      #ProfilesSlider .owl-nav button.owl-prev::after {
+        background-image: url(../img/left.svg); }
+  #ProfilesSlider .slide {
+    width: 40px;
+    height: 40px; }
 
-#slider .owl-dots .owl-dot span {
-  background: purple; }
-
-#slider .owl-dots .owl-dot.active {
-  background: green; }
-
-#slider .owl-nav button.owl-next {
-  color: red;
-  font-size: 50px; }
+.menu {
+  position: fixed;
+  max-width: 260px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 0px 16px 16px 0px;
+  padding-top: 25px;
+  margin-top: 10px;
+  overflow: visible; }
+  .menu .menu__logo {
+    margin-bottom: 60px;
+    padding-left: 25px; }
+  .menu .openClose {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 23%;
+    right: 0;
+    transform: translate(45%, -50%);
+    background: #ffffff;
+    cursor: pointer; }
+    .menu .openClose img {
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-35%, -50%); }
+    .menu .openClose .openMenu {
+      display: none; }
+  .menu nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #111B42;
+    padding-left: 25px;
+    height: 45px;
+    margin-bottom: 10px; }
+    .menu nav a:hover {
+      background: #f7f7f7; }
+    .menu nav a img {
+      margin-right: 20px; }

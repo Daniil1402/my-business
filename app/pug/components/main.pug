@@ -11,7 +11,7 @@
             img(src="assets/img/icon1.svg", alt="")
             img(src="assets/img/icon2.svg", alt="")
           .personalData__role
-            p(class = "roleTittle") Роли на платформе
+            p(class = "Tittle") Роли на платформе
             p(class = "role") Представитель компании
             p(class = "roleText") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ...
       .mainInfo__buttons
@@ -23,4 +23,31 @@
           img(src="assets/img/button3.svg", alt="")
         a(href="#")
           img(src="assets/img/button4.svg", alt="")
+      .mainInfo__needs
+        p(class = "Tittle") Потребности
+        ul
+          li Карьерная консультация
+          li Коучинг
+      .mainInfo__industry
+        p(class = "Tittle") Отрасль/сфера деятельности
+        ul
+          li Роботизация
+      .mainInfo__results
+        p(class = "Tittle") Результаты
+        button
+          span Лаборатория профиля
+          img(src="assets/img/icon3.svg", alt="")
+    .mainProfiles
+      p(class = "Tittle") Аналитика профиля 
+      .mainProfiles__top
+        .mainProfiles__references
+          span.mainProfiles__title Число упоминаний
+          span.mainProfiles__main 74
+          span.mainProfiles__info Подпись<br> текст
+        .mainProfiles__answers
+          span.mainProfiles__title Отвечает на запросы
+          span.mainProfiles__main 87%
+          span.mainProfiles__info Санкт-Петербург,<br> Россия
+      include ProfilesSlider
+
           

@@ -6,6 +6,11 @@
   padding: 0
   box-sizing: border-box
 
+a, button, form, textarea
+  &:active, &:focus
+    box-shadow: none
+    outline: none  
+
 body
   font-family: Montserrat-Regular, sans-serif
   // background: #E5E5E5
@@ -14,8 +19,10 @@ body
 .container
   max-width: 1600px
   width: 100%
-  margin: 0 auto
+  //margin: 0 auto
+  margin-left: 280px
 
 @import components/header
 @import components/main
-@import components/block
+@import components/ProfilesSlider
+@import components/menu
